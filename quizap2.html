@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+    <link rel="stylesheet" href="quizstyle1.css" type="text/css"/>
+    <title>Document</title>
+</head>
+<body>
+        
+
+    <div id="Container1">
+        
+       
+<div id="Q1" >
+<p id="p1" style="font-size:25px ;font:bold ;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ">Q1:HTML STANDS FOR:</p>
+<input type="checkbox" class="check1" onclick="q1()"/>HYPER TEXT MARKUP LANGUAGE</br>
+<input type="checkbox" class="check1" onclick="q1()"/>HYPER TEXT MOVIE LETTER</br>
+<input type="checkbox" class="check1" onclick="q1()"/>HYPER TEXT MANUAL LANGUAGE</br>
+<!-- <button id="btn" onclick="next()">NEXT</button> -->
+
+
+
+<p id="p2" style="font-size:25px ;font:bold;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Q2:CSS stands For:</p>
+<input type="checkbox" class="check2" onclick="q2()" />Cascading style sheet<br/>
+<input type="checkbox" class="check2" onclick="q2()"/>Computer Style Sheet</br>
+<input type="checkbox" class="check2" onclick="q2()" />Colour Full Style Sheet</br>
+
+<p id="p3" style="font-size:25px ;font:bold; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"> Q3:Where in an HTML document is the correct place to refer to an external style sheet?</p>
+<input type="checkbox" class="check3" onclick="q3()"/>In The head section</br>
+<input type="checkbox" class="check3" onclick="q3()"/>At the end of Document</br>
+<input type="checkbox" class="check3" onclick="q3()"/>In the body section</br>
+</div>
+
+<p id="p4" style="font-size:25px ;font:bold; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Q4:Which HTML attribute is used to define inline styles?</p>
+<input type="checkbox" class="check4" onclick="q4()"/>Class</br>
+<input type="checkbox" class="check4" onclick="q4()"/>font</br>
+<input type="checkbox" class="check4" onclick="q4()"/>style</br>
+
+<p id="p5" style="font-size:25px ;font:bold; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Q5:Which property is used to change the background color?</p>
+         <input type="checkbox" class="check5" onclick="q5()"/>bgcolor</br>
+         <input type="checkbox" class="check5" onclick="q5()"/>color</br>
+         <input type="checkbox" class="check5" onclick="q5()"/>background-color</br>
+
+         <p id="p6" style="font-size:25px ;font:bold; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Q6:Which CSS property is used to change the text color of an element?</p>
+         <input type="checkbox" class="check6" onclick="q6()"/>fgcolor</br>
+         <input type="checkbox" class="check6" onclick="q6()"/>text-color</br>
+         <input type="checkbox" class="check6" onclick="q6()"/>color</br>
+
+         <p id="p7" style="font-size:25px ;font:bold; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Q7:Who is making the Web standards?</p>
+         <input type="checkbox" class="check7" onclick="q7()"/>Mozilla</br>
+         <input type="checkbox" class="check7" onclick="q7()"/>The World Wide Consortium</br>
+         <input type="checkbox" class="check7" onclick="q7()"/>Google</br>
+
+         <p id="p8" style="font-size:25px ;font:bold; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Q8:Inline elements are normally displayed without starting a new line.
+
+        </p>
+         <input type="checkbox" class="check8" onclick="q8()"/>True</br>
+         <input type="checkbox" class="check8" onclick="q8()"/>False</br>
+
+         <p id="p9" style="font-size:25px ;font:bold; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Q9:An iframe tag is used to display a web page within a web page.</p>
+         <input type="checkbox" class="check9" onclick="q9()"/>True</br>
+         <input type="checkbox" class="check9" onclick="q9()"/>False</br>
+         <input type="checkbox" class="check9" onclick="q9()"/>There is no such thing as iframe</br>
+
+         <p id="p10" style="font-size:25px ;font:bold; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Q10:Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?</p>
+         <input type="checkbox" class="check10" onclick="q10()"/>alt</br>
+         <input type="checkbox" class="check10" onclick="q10()"/>longdesc</br>
+         <input type="checkbox" class="check10" onclick="q10()"/>title</br>
+
+         <button type="button" onclick="myfunction()" id="btn1" >SUBMIT</button>
+         <button type="button" onclick="resetfun()" id="btn2">RESET</button>
+         <div id="myModal" class="modal">
+             <div class="modal-content">
+                 <span class="close">&times;</span>
+         <p id="result"></p>
+         <p id="answers"></p>
+        </div>
+        </div>
+
+         
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <script src="app1.js">
+
+    </script>
+</body>
+</html>
